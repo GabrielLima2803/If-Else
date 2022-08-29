@@ -1,0 +1,44 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O script não deve se preocupar com a quantidade de notas existentes na máquina.
+
+    Exemplo: Para sacar a quantia de 256 reais, o script fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
+    Exemplo: Para sacar a quantia de 399 reais, o script fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+    */
+
+    //ENTRADA
+    let saque = Number(prompt("Informe um valor para sacar o seu dinheiro (Minimo 10 e Maximo 600)"))
+    let nota100 = 0
+    let nota50 = 0
+    let nota10 = 0 
+    let nota5 = 0
+    let nota1 = 0
+    //PROCESSAMENTO
+
+        if(saque < 10 || saque > 600) 
+            alert(`Valor Invalido`)
+        else
+
+         nota100 =  Math.floor (saque / 100)
+        saque = saque % 100
+        nota50 = Math.floor (saque  / 50)
+        saque = saque % 50
+        nota10 = Math.floor (saque / 10)
+        saque = saque % 10
+         nota5 = Math.floor (saque / 5)
+         saque % 5
+            nota1 = saque
+
+        
+       if (nota100 > 0) alert(`Notas de Cem = ${nota100}`)     
+       if (nota50 > 0) alert(`Notas de Ciquenta = ${nota50}`)
+       if (nota10 > 0) alert(`Notas de Dez = ${nota10}`)    
+       if (nota5 > 0) alert(`Notas de Cinco = ${nota5}`)
+       if(nota1 > 1) alert(`Notas de Um = ${nota1}`)
+   
+    
+    //SAÍDA
+
+
+</script>

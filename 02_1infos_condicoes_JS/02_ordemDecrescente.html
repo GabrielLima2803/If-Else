@@ -1,0 +1,35 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que leia três números e mostre-os em ordem decrescente.
+    */
+
+    //ENTRADA
+    const n1 = parseInt(prompt("Informe um numero 1"))
+    const n2 = parseInt(prompt("Informe um numero 2"))
+    const n3 = parseInt(prompt("Informe um numero 3"))
+    //PROCESSAMENTO
+    if (n1 > n2 && n2 > n3) {
+        document.write(`${n1} ${n2} ${ n3 } `)
+    }
+    else if (n1 > n3 && n3 > n2) {
+        document.write(`${ n1 } ${ n3 } ${ n2 } `)
+    }
+    else if (n2 > n1 && n1 > n3) {
+        document.write(`${ n2 } ${ n1 } ${ n3 } `)
+    }
+    else if (n2 > n3 && n3 > n1) {
+        document.write(`${ n2 } ${ n3 } ${ n1 } `)
+    }
+    else if (n3 > n1 && n1 > n2) {
+        document.write(`${ n3 } ${ n1 } ${ n2 } `)
+    }
+    else{
+        document.write(`${ n3 } ${ n2 } ${ n1 }`)
+    }
+
+    
+    //SAÍDA
+
+
+</script>
